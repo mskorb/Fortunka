@@ -1,4 +1,5 @@
 Fortunka::Application.routes.draw do
+ match '/fortunes/comment'=>'fortunes#_comments'
  match '/fortunes/:id/edit'=>'fortunes#edit'
  match '/fortunes/:id/update'=>'fortunes#update'
  match '/fortunes/new'=>'fortunes#new'
@@ -6,6 +7,7 @@ Fortunka::Application.routes.draw do
  match '/fortunes/info'=>'fortunes#info'
  match '/fortunes'=>'fortunes#index'
  match '/fortunes/:id'=>'fortunes#show'
+
 
 
   # The priority is based upon order of creation:

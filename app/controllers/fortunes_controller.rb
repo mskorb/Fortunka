@@ -28,5 +28,6 @@ class FortunesController < ApplicationController
  
  def info
  end
+ 
 
 end

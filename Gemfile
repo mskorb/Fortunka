@@ -8,6 +8,8 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 
 gem 'kaminari' 
+gem 'jqueryui_rails'
+gem 'acts_as_commentable'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

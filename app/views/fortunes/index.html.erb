@@ -1,0 +1,24 @@
+  <div class="text-header">Recent notes</div>
+<%= paginate @fts %>
+
+<% for ft in @fts %>	     
+       <div class="note">
+	    <div class="notet"></div> <div class="clear"></div> <div class="notec"> 
+      
+        <div class="text-note">
+	                <ul>
+
+<li><a href="/fortunes/<%=ft.id%>"></a><%= ft.content %> </li>
+<div style="text-align:right;"><a href="/fortunes/<%= ft.id %>">Wiecej</a></div>
+
+</ul>
+ </div>
+      
+      
+      </div> <div class="clear"></div> 
+      
+      <div class="noteb"> </div>
+      <div class="clear"></div>       
+	    </div> 
+	    <% end %>
+	    

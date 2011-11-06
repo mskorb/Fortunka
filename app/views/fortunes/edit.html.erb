@@ -1,0 +1,27 @@
+<div class="text-header">Edytuj</div>
+<div class="note">
+	    <div class="notet"></div> <div class="clear"></div> <div class="notec"> 
+      
+        <div class="text-note">
+<%= form_for(@ft,:url=>{:action=>'update'}) do |f| %>
+  <div class="field">
+    <%= f.label :Tresc %><br />
+    <%= f.text_area :content, :size=>"30x15" %>
+  </div> 
+
+ <div class="field">
+    <%= f.label :autor %><br />
+    <%= f.text_field :autor %>
+  </div>
+ <div class="actions">
+    <%= f.submit "Uaktualnij" %>
+  </div>
+<% end %>
+ </div>
+ </div>
+ <div class="clear"></div> 
+      
+      <div class="noteb"> </div>
+      <div class="clear"></div> 
+</div>
+

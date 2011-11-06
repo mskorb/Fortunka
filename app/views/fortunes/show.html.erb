@@ -1,0 +1,23 @@
+<div class="text-header">Note #<%=@ft.id%></div>
+
+ <div class="note">
+	    <div class="notet"></div> <div class="clear"></div> <div class="notec"> 
+      
+        <div class="text-note">
+	       Fortunka id (<%=@ft.id%>)
+
+<br />
+<%= @ft.content %><br />
+<br />
+<b>Autor:</b> <%= @ft.autor %><br />
+<b>Data dodania:</b> <%= @ft.created_at %>
+<br /><br />
+<a href="/fortunes">Cofnij </a> | <a href="/fortunes/<%=@ft.id %>/edit">Edytuj</a>
+
+ </div>
+ </div>
+  <div class="clear"></div> 
+      
+      <div class="noteb"> </div>
+      <div class="clear"></div> 
+ </div>

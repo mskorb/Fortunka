@@ -1,0 +1,20 @@
+body    { background: #eaeaea; font-family: Georgia; font-size: 1em; color: #676c6e; }
+h1    { color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 3em; text-shadow: 1px 1px 6px #000000; }
+#logo_head {margin-top:15px;}
+.note { width:458px;  }
+.notet {background-image: url('../images/ynotes-top.jpg'); width:458px; height:70px; float:left;  }
+.notec {background-image: url('../images/ynotes-content.jpg'); width:458px; float:left; }
+.noteb {background-image: url('../images/ynotes-bottom.jpg'); width:458px; height:10px; float:left; }
+
+#mnote {background-image: url('../images/gnotes.jpg'); width:257px; height:271px; margin-left:10px }
+#mnote_inner {font-size:1.15em; padding:60px 5px 0 15px;}
+
+#mnote_inner A:link {text-decoration: none; color:green;}
+#mnote_inner A:visited {text-decoration: none;  color:green;}
+#mnote_inner A:active {text-decoration: none;  color:green;}
+#mnote_inner A:hover {text-decoration: underline; color: red;}
+
+
+.text-header{color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 1.5em; text-shadow: 1px 1px 2px #ffffff; }
+.text-note{font-size:1.2em; padding:10px; }
+.clear{ clear:both;}

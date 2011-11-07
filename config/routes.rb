@@ -1,5 +1,5 @@
 Fortunka::Application.routes.draw do
- match '/fortunes/comment'=>'fortunes#_comments'
+
  match '/fortunes/:id/edit'=>'fortunes#edit'
  match '/fortunes/:id/update'=>'fortunes#update'
  match '/fortunes/new'=>'fortunes#new'
@@ -66,4 +66,5 @@ Fortunka::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  resources :comments
 end

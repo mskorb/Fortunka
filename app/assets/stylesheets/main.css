@@ -9,7 +9,7 @@ h1    { color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 3e
 #mnote {background-image: url('../images/gnotes.jpg'); width:257px; height:271px; margin-left:10px }
 #mnote_inner {font-size:1.15em; padding:60px 5px 0 15px;}
 
-#mnote_inner A:link {text-decoration: none; color:green;}
+#mnote_inner A:link { font-size:1em;text-decoration: none; color:green;}
 #mnote_inner A:visited {text-decoration: none;  color:green;}
 #mnote_inner A:active {text-decoration: none;  color:green;}
 #mnote_inner A:hover {text-decoration: underline; color: red;}
@@ -18,3 +18,8 @@ h1    { color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 3e
 .text-header{color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 1.5em; text-shadow: 1px 1px 2px #ffffff; }
 .text-note{font-size:1.2em; padding:10px; }
 .clear{ clear:both;}
+.footer{padding:10px 0 10px 5px;}
+A:link {font-size:.8em; text-decoration: none; color:gray;}
+A:visited {text-decoration: none;  color:gray;}
+A:active {text-decoration: none;  color:gray; text-shadow: 1px 1px 3px #000000;}
+A:hover {text-decoration: underline; color: gray; text-shadow: 1px 1px 1px #ffffff;}

@@ -34,7 +34,8 @@ end
  end
  
  def random
-    @ft= Fortune.find(rand(9-1)+1)
+
+    @ft= Fortune.find(rand(Fortune.maximum(:id)-1)+1)
        @comment = Comment.new
   respond_with(@fortune)
  end

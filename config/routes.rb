@@ -1,6 +1,13 @@
 Fortunka::Application.routes.draw do
 
-
+ match '/fortunes/:id/edit'=>'fortunes#edit'
+ match '/fortunes/:id/update'=>'fortunes#update'
+ match '/fortunes/new'=>'fortunes#new'
+ match '/fortunes/create'=>'fortunes#create'
+ match '/fortunes/info'=>'fortunes#info'
+ match '/fortunes/rand0m'=>'fortunes#random'
+ match '/fortunes'=>'fortunes#index'
+ match '/fortunes/:id'=>'fortunes#show'
 
 
 

@@ -27,10 +27,16 @@ class FortunesController < ApplicationController
 def show
   @ft= Fortune.find(params[:id])
   @comment = Comment.new
-  #respond_with(@fortune)
+  respond_with(@fortune)
 end
  
  def info
+ end
+ 
+ def random
+    @ft= Fortune.find(rand(9-1)+1)
+       @comment = Comment.new
+  respond_with(@fortune)
  end
  
 

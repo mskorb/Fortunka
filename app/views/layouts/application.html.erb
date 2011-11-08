@@ -1,14 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Fortunka</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
+<!doctype html>
+    <head>
+
+    <title>Sticky notes: <%= controller.action_name %></title>
+    <meta charset="utf-8">
+    <meta name="author" content="Mateusz Skorb" />
+    <meta name="description" content="Fortunka"/>
+    <meta name="keywords" content=""/>
+    <meta name="robots" content="all" />
+
+    <meta name="revisit-after" content="7 Days" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+     <%= stylesheet_link_tag 'reset.css' %>
+          <%= stylesheet_link_tag '960.css' %>
+            <%= stylesheet_link_tag 'main.css' %>
+            
+            
+            <%= javascript_include_tag 'jquery.js' %>
+            <%= javascript_include_tag 'jquery-ui' %>
+            
+
+    </head>
+    <body>
+<div style="background:#372e27;">
+   <div class="container_12">
+ <div class="grid_4">  
+  <br />
+ </div>
+  
+  <div class="grid_4">
+    <div id="logo_head">
+    
+    <a href="/fortunes/">  <%= link_to image_tag("logo.png") %></a> 
+           </div>
+  
+  <h1>Sticky notes</h1>  
+</div>
+
+<div class="grid_4">  
+  <br />
+ </div>
+ 
+</div>
+</div>    
+
+
+<div class="container_12" style="background:#ebe3d5; padding-bottom:25px;">
+ 
+	<div class="grid_8">
+	  
+      
+      
 <%= yield %>
+	    
+	    
+	    
+	     
+	    
+	    
+  </div>
+  
+  <div class="grid_4">
+	    <div class="text-header">Menu</div>
+	    
+	    <div id="mnote">
+	         <div id="mnote_inner">
+	         <ul>
+	         
+	       <li><a href="/fortunes">All notes </a>   </li>
+	       <li><b><a href="/fortunes/new">Add new note </a></b> </li>
+	       <li><a href="/fortunes/rand0m">Random note </a>  </li>
+	       <li><a href="/fortunes/info">Info </a>  </li>
+	        </ul>
+            </div>
+	    </div>
+  </div>
+</div>
+<div class="container_12" style="background:#2e2633; border-top:5px solid #efffcd;">
+   
+   <div class="grid_12">
+   		<div class="footer">
+   	
+   		Design and Coding &copy; 2011 Mateusz Skorb
+   		</div>
+   	</div>
+</div>
 
 </body>
 </html>

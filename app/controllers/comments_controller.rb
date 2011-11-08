@@ -1,28 +1,28 @@
 class CommentsController < ApplicationController
   before_filter do
-    @fortune = Fortune.find(params[:fortune_id])
+    @ft = Fortune.find(params[:fortune_id])
   end
 
   def create
-    @comment = @fortune.comments.build(params[:comment])
+    @comment = @ft.comments.build(params[:comment])
     @comment.save
-    respond_with(@fortune, @comment, :location => @fortune)
+    respond_with(@ft, @comment, :location => @ft)
   end
 
   def destroy
-    @comment = @fortune.comments.find(params[:id])
+    @comment = @ft.comments.find(params[:id])
     @comment.destroy
-    respond_with(@fortune, @comment, :location => @fortune)
+    respond_with(@ft, @comment, :location => @ft)
   end
   
   def edit
-  @comment = @fortune.comments.find(params[:id])
+  @comment = @ft.comments.find(params[:id])
 end
 
 def update
-  @comment = @fortune.comments.find(params[:id])
+  @comment = @ft.comments.find(params[:id])
   @comment.update_attributes(params[:comment])
-  respond_with(@fortune, @comment, :location => @fortune)
+  respond_with(@ft, @comment, :location => @ft)
 end
 
 end

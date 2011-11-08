@@ -1,6 +1,8 @@
 <p><i>Autor:</i> <%= comment.author %></p>
 <p><i>Body:</i><%= comment.body %></p>
 <br />
+
 <p>
-  <%= link_to "Delete", [@ft, comment], :confirm => t('helpers.data.sure'), :method => :delete %>
-</p>
+   </p>
+ <p>
+<%= link_to 'Edit', edit_fortune_comment_path(@ft, comment) %></p>

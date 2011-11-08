@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 	//toggle comment
 	$(".note").click(function(){
-		$(this).next(".comment").toggle("bounce",{},500);
+		$(this).next(".cm").toggle("bounce",{},500);
 		return false;
 	});
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
             
 	 
 	    </div> 
-	  <div class="comment"> <div class="comment_inner">
+	  <div class="cm"> <div class="cm_inner">
 
 	 #<%= ft.id %>, Notatka dodana: <%= ft.created_at %> <br />
 	 		<div style="text-align:right;"><a href="/fortunes/<%= ft.id %>">Wiecej</a></div>

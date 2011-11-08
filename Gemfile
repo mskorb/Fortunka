@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
+gem 'simple_form'
+gem 'responders'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -10,7 +12,7 @@ gem 'sqlite3'
 gem 'kaminari' 
 gem 'jqueryui_rails'
 gem 'acts_as_commentable'
-gem 'simple_form'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

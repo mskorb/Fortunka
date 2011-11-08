@@ -88,6 +88,7 @@ GEM
     rake (0.9.2.2)
     rdoc (3.11)
       json (~> 1.4)
+    responders (0.6.4)
     sass (3.1.10)
     sass-rails (3.1.4)
       actionpack (~> 3.1.0)
@@ -125,6 +126,7 @@ DEPENDENCIES
   jqueryui_rails
   kaminari
   rails (= 3.1.0)
+  responders
   sass-rails (~> 3.1.0)
   simple_form
   sqlite3

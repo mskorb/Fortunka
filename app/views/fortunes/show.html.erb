@@ -21,5 +21,18 @@
       <div class="noteb"> </div>
       <div class="clear"></div> 
  </div>
+<div class="comment2"><div class="comment_inner">
+ 	<% if @ft.comments.any? %>
+  <h2>Comments</h2>
+  <% @ft.comments.each do |comment| %>
+   <p>Autor:<br><%= comment.author %></p>
+   <p><%= comment.body %></p>
+   <p>
+     <%= link_to "Delete", [@ft, comment], :confirm => t('helpers.data.sure'), :method => :destroy %>
+   </p>
+ <% end %> 
+ <% end %> 
+   <h2>Add new comment</h2>
+<%= render :partial => 'comments/form' %>
 
- 
+</div></div>

@@ -14,6 +14,7 @@ class CommentsController < ApplicationController
     @comment.destroy
     respond_with(@fortune, @comment, :location => @fortune)
   end
+  
   def edit
   @comment = @fortune.comments.find(params[:id])
 end
@@ -23,4 +24,5 @@ def update
   @comment.update_attributes(params[:comment])
   respond_with(@fortune, @comment, :location => @fortune)
 end
+
 end

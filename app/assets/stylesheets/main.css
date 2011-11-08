@@ -17,9 +17,11 @@ h1    { color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 3e
 
 .text-header{color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 1.5em; text-shadow: 1px 1px 2px #ffffff; }
 .text-note{font-size:1.2em; padding:10px; }
+.text-link{font-size:1.2em; padding:10px; }
 .clear{ clear:both;}
 .footer{padding:10px 0 10px 5px;}
 .comment {display:none; background-image: url('../images/comment.jpg'); width:456px; }
+.comment2 {background-image: url('../images/comment.jpg'); width:456px; }
 .comment_inner{padding: 0 15px 15px 15px;}
 A:link {font-size:.8em; text-decoration: none; color:gray;}
 A:visited {text-decoration: none;  color:gray;}

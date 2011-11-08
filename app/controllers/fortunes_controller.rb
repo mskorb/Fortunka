@@ -24,9 +24,11 @@ class FortunesController < ApplicationController
  	@ft = Fortune.new
  end
 
- def show
-	@ft=Fortune.find(params[:id])
- end
+def show
+  @ft= Fortune.find(params[:id])
+  @comment = Comment.new
+  #respond_with(@fortune)
+end
  
  def info
  end

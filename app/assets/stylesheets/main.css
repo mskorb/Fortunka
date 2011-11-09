@@ -22,6 +22,7 @@ h1    { color:#6c5a58; margin: 40px auto 30px; text-align: center; font-size: 3e
 .footer{padding:10px 0 10px 5px;}
 .cm {display:none; background-image: url('../images/comment.jpg'); width:456px; }
 .cm2 {background-image: url('../images/comment.jpg'); width:456px; }
+.cm_border {border-left:2px solid #F7A8B9; padding-left:3px; }
 .cm_inner{padding: 0 15px 15px 15px;}
 A:link {font-size:.8em; text-decoration: none; color:gray;}
 A:visited {text-decoration: none;  color:gray;}
